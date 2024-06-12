@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+:root {
+    --base-font-size : 16px;
+    --heading-font-size : 20px;
+    --background-color: #F2F6F8;
+    --primary-color: #5056ED;
+    --warn-color : #ED5050;
+    --base-text-color :"rgba(0,0,0,0.9)";
+    --history-text-color : rgba(0,0,0,0.8);
+    --container-width : 1000px;
+    --card-radius : 25px;
+    --card-box-shadow : 5px 5px 8px rgba(0,0,0,0.1);
+    --overlay-backdrop : rgba(0,0,0,0.3);
+    --button-height:40px;
+    --input-height:40px
+
+}
+
+body{
+    font-size : var(--base-font-size);
+    color : var(--base-text-color);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-size : var(--heading-font-size)
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

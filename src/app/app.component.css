@@ -1,0 +1,46 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--background-color);
+    font-size: var(--heading-font-size);
+}
+
+.plus-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .excel-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    background-color: green;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+

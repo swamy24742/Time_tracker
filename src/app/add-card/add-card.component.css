@@ -1,0 +1,53 @@
+.add-task-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--overlay-backdrop);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 20px;
+    width: 40%;
+    border-radius: var(--card-radius);
+    text-align: center;
+    box-shadow: var(--card-box-shadow);
+}
+
+input {
+    width: 100%;
+    height: var(--input-height);
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: var(--base-font-size);
+    border: 1px solid #ccc;
+    /* Add a thin border */
+    border-radius: 10px;
+    /* Adjust the border radius */
+}
+
+button {
+    height: var(--button-height);
+    width: 25%;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.label-position {
+    margin-bottom: 10px;
+    padding-right: 72%;
+}
+
+.icon-position {
+    padding-left: 95%;
+}

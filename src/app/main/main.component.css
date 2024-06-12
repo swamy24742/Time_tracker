@@ -1,0 +1,66 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--background-color);
+    font-size: var(--heading-font-size);
+}
+.timePicker{
+    margin-left: 10px;
+}
+
+.totalTime{
+    float: right;
+}
+
+.task-box {
+    border: 1px solid #ddd;
+    border-radius: var(--card-radius);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: var(--card-box-shadow);
+    opacity: 0.9;
+}
+
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-name {
+    font-weight: bold;
+}
+
+.task-time {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.task-history {
+    margin-top: 10px;
+    color: var(--history-text-color);
+}
+
+button {
+    height: var(--button-height);
+    width: 12%;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+  }
+
+.start {
+    background-color: var(--primary-color);
+}
+
+.stop {
+    background-color: var(--warn-color);
+}
+
+
+

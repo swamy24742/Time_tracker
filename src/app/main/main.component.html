@@ -1,0 +1,20 @@
+<div class="header">
+    <span class="timePicker"><img src="https://open-frontend-bucket.s3.amazonaws.com/interviews/001/logo.svg" alt=""></span>
+
+    <span class="totalTime">Total Time Spent: {{ formatTime(totalTimeSpent) }}</span>
+</div>
+<div class="task-box" *ngFor="let item of tasks; let i = index">
+    <div class="task-header">
+      <span class="col-md-6 task-name">{{ item.name }}</span>
+      <span class="col-md-3 task-time">| {{ formatTime(item.time)}}</span>
+      <button *ngIf="!item.running" class="col-md-2 start" (click)="startTime(i)">Start</button>
+      <button *ngIf="item.running" class="col-md-2 stop" (click)="stopTime(i)">Stop</button>
+      <span class="col-md-1" (click)="deleteTask(i)"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+      </svg></span>
+    </div>
+    <div class="task-history">
+        <div *ngIf="item.history.length === 0">No History found, click on start time to track timer.</div>
+        <div *ngFor="let history of item.history">{{ history }}</div>
+    </div>
+  </div>
